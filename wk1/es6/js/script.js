@@ -73,12 +73,20 @@
     var calculate = new Promise(function(resolve, reject){
       var a = firstNum.value;
       var b = secondNum.value;
-      if (a === 0 || b === 0){
-        reject('Please Enter Values');
+      // if (a !== '' && b != ''){
+      //   resolve(a/b);
+      // } else {
+      //   reject('No Values');
+      // }
+      if (a == '' || b == ''){
+        reject('No Values');
       } else {
-        // console.log(a / b);
+        resolve(a/b);
       }
     });
+
+    calculate.then((data) => console.log(data))
+    .catch((data) => console.log('Error: No Value'));
   });
 
 }());
