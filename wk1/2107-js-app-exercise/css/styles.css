@@ -17,6 +17,19 @@ body {
   background-position: center;
   background-size: cover;
 }
+/* .slide-image-left {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+}
+@@keyframes slideLeft {
+  from {
+    background-position: center:
+  }
+  to {
+    background-position: left;
+  }
+} */
+
 .slider-btns-container {
   width: 100%;
   height: 100%;
@@ -51,24 +64,16 @@ body {
 }
 .dots-cont {
   height: 5%;
-  width: 15%;
+  width: 20%;
   /* background-color: yellow; */
   position: absolute;
   bottom: 5%;
-  left: 42%;
+  left: 40%;
 }
-ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  color: rgba(0, 0, 0, 0.4);
-}
-li {
-  margin: 5% 0 0 0;
+.dots {
+  margin: 7%;
 }
 .active-dot {
   color: white;
   font-size: 1.5rem;
-  margin: 3.5% 0 0 0;
 }
